@@ -1,0 +1,422 @@
+:root {
+    --off-black: #0c0c0c;
+}
+
+body {
+    background-color: var(--off-black);
+    font-family: 'Lora', serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+h1 {
+    font-weight: 900;
+}
+h2, h3 {
+    font-weight: 500;
+}
+h4, h5, h6 {
+    font-weight: 300;
+}
+header {
+    display: flex;
+    width: 97vw;
+    height: 45vh;
+    left: 1vw;
+    position: relative;
+    background-color: #151116;
+    border-radius: 20px 5px 0px 0px;
+    margin-top: 30px;
+    background: linear-gradient(0deg, var(--off-black) 0%, rgb(21, 20, 22) 21%);
+
+
+}
+.projects-button {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    line-height: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 35px 17px 35px 17px;
+    border-radius: 75px;
+    margin: auto;
+    font-size: 100%;
+    background-color: rgb(95, 108, 172);
+    outline: 2px solid rgb(255, 255, 255);
+    font-size: 120%;
+    cursor: pointer;
+    transition: filter .8s
+    text-shadow .6s,
+    padding .2s,
+    font-size .2s;
+}
+.projects-button:hover {
+    font-size: 125%;
+    padding: 37px 19px 37px 19px;
+    filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.308));
+    text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.493);
+    transition: filter .3s,
+    text-shadow .3s,
+    padding .1s,
+    font-size .1s;
+}
+.header-container {
+    position: absolute;
+    width: 98vw;
+    margin: 0px;
+    height: 50vh;
+    border-radius: 20px;
+    right: 100vw;
+    top: -20px;
+    background: linear-gradient(36deg, #3f5efb 0%, #fc466b 100%);
+    clip-path: polygon(0 0, 60% 0%, 40% 100%, 0 100%, 0 0);
+    /* border: 3px solid rgba(255, 255, 255, 0.747); */
+    box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.637);
+    animation: slideLeft 1.9s cubic-bezier(.16,.78,.06,1.02) forwards .7s;
+}
+.header-text {
+    color: rgba(255, 255, 255, 0.863);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    
+    align-items: center;
+    justify-content: center;
+    line-height: .5;
+    
+}
+.header-text h1 {
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.397),
+    1px 3px 2px rgba(0, 0, 0, 0.514);
+    font-size: 600%;
+    letter-spacing: .1rem;
+}
+.header-text h1, .header-text h3{
+    position: relative;
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
+}
+.header-text h2 {
+    font-size: 300%;
+    height: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.158);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.473);
+    width: 60%;
+}
+.header-text h3 {
+    text-shadow: 0px 0px 30px white;
+    color: rgba(255, 255, 255, 0.63);
+}
+.line {
+    position: absolute;
+    right:0vw;
+    top:-100vh;
+    background-color: rgba(211, 211, 211, 0.596);
+    width: 50%;
+    height: 50%;
+    clip-path: polygon(60% 0, 75% 0, 100% 50%, 100% 75%);
+    animation: slideDown 2.5s cubic-bezier(.16,.78,.06,.98) forwards 2.2s;
+}
+.quote {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5vh;
+    right: 15vw;
+    font-size: 200%;
+    color: rgba(255, 255, 255, 0.863);
+
+}
+.p1 {
+    opacity: 0%;
+    animation: fadeIn 2.3s ease-in-out 3.1s forwards;
+}
+.p2 {
+    position: relative;
+    left: -22%;
+    opacity: 0%;
+    animation: fadeIn 2.3s ease-in-out 3.4s forwards;
+}
+.p3 {
+    position: relative;
+    left: 10%;
+    font-size: 170%;
+    line-height: .1;
+    font-weight: 700;
+    color: white;
+    opacity: 0%;
+    animation: fadeIn 2.7s ease-in-out 2.35s forwards;
+}
+.name {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    left: 60%;
+    transform: translateY(100%);
+    position: relative;
+    font-size: 80%;
+    letter-spacing: .2rem;
+    opacity: 0%;
+    animation: fadeIn 1.5s ease-in-out 5s forwards;
+}
+.nav-buttons img {
+    display: flex;
+    margin: 8%;
+    width: 200px;
+    height: 200px;
+    outline: 3px solid rgb(255, 255, 255);
+    border-radius: 250px;
+    padding: 8px;
+    opacity: 15%;
+    transition: filter 0.75s ease-out,
+    box-shadow 0.65s,
+    outline .4s,
+    opacity .2s,
+    width 0.25s,
+    height 0.25s,
+    padding 0.25s,
+    transform 0.35s;
+}
+.nav-buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 50vh;
+    width: 90vw;
+}
+.nav-buttons img:hover {
+    width: 216px;
+    height: 216px;
+    transform: translateY(-5px);
+    padding: 0px;
+    cursor: pointer;
+    opacity: 80%;
+    filter: drop-shadow(0px 0px 50px rgba(255, 0, 76, 0.521));
+    outline: 3px solid rgba(255, 255, 255, 0.562);
+    box-shadow: inset 0px 30px 40px rgba(255, 255, 255, 0.103),
+    inset 0px 0px 15px rgba(255, 255, 255, 0.397);
+    transition: filter 0.35s ease-out,
+    box-shadow 0.45s,
+    outline 0.45s,
+    width 0.1s ease-in-out,
+    height 0.1s ease-in-out,
+    padding 0.1s ease-in-out,
+    transform 0.15s ease-in-out;
+}
+
+
+@-webkit-keyframes slideLeft {
+    0% {
+        right: 100vw;
+    }
+    
+    100% {
+        right: 0;
+    }
+}
+@-moz-keyframes slideLeft {
+    0% {
+        right: 100vw;
+    }
+    
+    100% {
+        right: 0;
+    }
+}
+@-o-keyframes slideLeft {
+    0% {
+        right: 100vw;
+    }
+    
+    100% {
+        right: 0;
+    }
+}
+@keyframes slideLeft {
+    0% {
+        right: 100vw;
+    }
+    
+    100% {
+        right: 0;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 100%;
+    }
+}
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 100%;
+    }
+}
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 100%;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 100%;
+    }
+}
+
+@-webkit-keyframes slideLeft {
+    0% {
+        right: 100vw;
+    }
+    
+    100% {
+        right: 0;
+    }
+}
+@-moz-keyframes slideLeft {
+    0% {
+        right: 100vw;
+    }
+    
+    100% {
+        right: 0;
+    }
+}
+@-o-keyframes slideLeft {
+    0% {
+        right: 100vw;
+    }
+    
+    100% {
+        right: 0;
+    }
+}
+@keyframes slideDown {
+    0% {
+        top: -100vh;
+    }
+    
+    100% {
+        top: 0;
+    }
+}
+@media screen and (max-width: 1500px) {
+    header {
+        position: relative;
+        margin: 0 auto;
+        width: 95vw;
+        left: 0;
+        top: 25px;
+    }
+    .header-container {
+        clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+        border-radius: 0;
+        left: -1vw;
+        margin: auto;
+    }
+    .header-text :nth-child(1) {
+        text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.397),
+        3px 6px 0px rgba(0, 0, 0, 0.514);
+        letter-spacing: 0;
+        font-size: 450%;
+        font-weight: 900;
+    }
+    .header-text {
+        position: relative;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        margin: 0 auto;
+    }
+    .header-text h3 {
+        display: flex;
+        letter-spacing: .5ch;
+        font-weight: 700;
+        font-size: 250%;
+        width: 60vw;
+        line-height: 1.5;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color:white;
+    }
+    .header-text span {
+        display: none;
+    }
+    .quote {
+        display: none;
+    }
+    .line {
+        width: 100vw;
+    }
+    .nav-buttons {
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 900px) {
+    .header-text {
+        transform: translateY(-2vw);
+        animation: none;
+    }
+    .header-text h1 {
+        width: 300px;
+        line-height: 1.2;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .header-container {
+        width: 95vw;
+        animation: none;
+    }
+    .line {
+        animation: none;
+        top: 0;
+    }
+    .nav-buttons {
+        justify-content: space-evenly;
+        margin: auto;
+        height: 50vh;
+        width: 90vw;
+    }
+    .nav-buttons img {
+        display: flex;
+        margin: 5%;
+        width: 150px;
+        height: 150px;
+        padding: 8px;
+    }
+    .nav-buttons img:hover {
+        width: 166px;
+        height: 166px;
+        transform: translateY(-5px);
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}
