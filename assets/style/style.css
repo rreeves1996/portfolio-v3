@@ -1,6 +1,10 @@
 :root {
     --off-black: #0c0c0c;
 }
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
 body {
     background-color: var(--off-black);
@@ -36,8 +40,8 @@ header {
 section {
     position: relative;
     min-height: 100vh;
-    min-width: auto;
     color: rgba(255, 255, 255, 0.884);
+
 }
 .projects-button {
     align-items: center;
@@ -131,14 +135,18 @@ section {
 .quote {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     top: 5vh;
-    right: 15vw;
+    left: 20vw;
+    width: 20vw;
+    margin: 0 auto;
     font-size: 200%;
     color: rgba(255, 255, 255, 0.863);
 
 }
 .p1 {
+    display: flex;
+    width: 25vw;
     opacity: 0%;
     animation: fadeIn 2.3s ease-in-out 3.1s forwards;
 }
@@ -170,8 +178,7 @@ section {
     animation: fadeIn 1.5s ease-in-out 5s forwards;
 }
 .nav-buttons img {
-    display: flex;
-    margin: 8%;
+    margin: 5%;
     width: 200px;
     height: 200px;
     outline: 3px solid rgb(255, 255, 255);
@@ -190,11 +197,10 @@ section {
 .nav-buttons {
     position: relative;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: auto;
-    height: 50vh;
+    min-height: 50vh;
     width: 90vw;
 }
 .nav-buttons img:hover {
@@ -220,17 +226,123 @@ section {
 .about {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0px auto;
     align-items: center;
+    min-height: 100vh;
     width: 70vw;
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgb(21, 20, 22) 11%, rgb(21, 20, 22) 89%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgb(21, 20, 22) 11%, rgb(21, 20, 22) 89%, rgba(0,0,0,0) 100%);
 }
 .about h1 {
     text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
     font-size: 500%;
     letter-spacing: .5rem;
     font-weight: 500;
+}
+.about-container {
+    width: 90%;
+}
+.about p {
+    font-size: 150%;
+    margin: 0px;
+    line-height: 3rem;
+}
+.about-picture {
+    position: relative;
+
+    width: 400px;
+    height: 286px;
+}
+#picture-1 {
+    margin: 25px 7px 25px 25px;
+    float: right;
+}
+#picture-2 {
+    margin: 25px 35px 25px 4px;
+    float: left;
+}
+#p1 {
+    text-align: left;
+}
+#p2 {
+    text-align: right;
+    /* margin: 0px 0px 0px 6px; */
+}
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+    align-items: center;
+    min-height: 100vh;
+    width: 75vw;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgb(21, 20, 22) 11%, rgb(21, 20, 22) 89%, rgba(0,0,0,0) 100%);
+}
+.portfolio h1 {
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
+    font-size: 500%;
+    letter-spacing: .5rem;
+    font-weight: 500;
+}
+.carousel-cell {
+    filter: drop-shadow(4px 7px 8px rgba(0, 0, 0, 0.466));
+    margin-bottom: 50px;
+}
+.portfolio-container1 {
+    position: relative;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.g-project {
+    display: flex;
+    margin: 20px;
+    height: 300px;
+}
+.portfolio-container2 {
+    width: 80%;
+    margin: 50px;
+    text-align: center;
+}
+.project {
+    margin: 0px 20px 0px 20px;
+    height: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.label-container {
+    margin: 0px 20px 0px 20px;
+    padding: 0px 0px 0px 0px;
+    
+    outline: 1px solid rgba(10, 10, 10, 0.514);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.project-label {
+    font-weight: 900;
+    margin: 0px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.123);
+    background: linear-gradient(36deg, #3f5efb 0%, #fc466b 100%);
+    box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.637);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+}
+.project-desc {
+    color: rgba(255, 255, 255, 0.849);
+    
+    background: linear-gradient(36deg, #3f5efb98 0%, #fc466a9c 100%);
+    margin: 0px;
+    padding: 20px 0px 20px 0px;
+    background-color: rgba(0, 0, 0, 0.822);
+    box-shadow: inset 0px 0px 70px rgba(0, 0, 0, 0.973);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .nav-bar {
@@ -251,8 +363,8 @@ section {
 .nav-bar h3:hover {
     text-shadow: 0px 0px 2px white;
     opacity: 100%;
-    transition: opacity .1s,
-    text-shadow .1s;
+    transition: opacity .08s,
+    text-shadow .08s;
 }
 @-webkit-keyframes slideLeft {
     0% {
@@ -364,26 +476,44 @@ section {
         top: 0;
     }
 }
-@media screen and (max-width: 1500px) {
-    header {
-        position: relative;
-        margin: 0 auto;
-        width: 95vw;
-        left: 0;
-        top: 25px;
+@media screen and (max-width: 1750px) {
+    .name {
+        display: none;
     }
-    .header-container {
-        clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
-        border-radius: 0;
-        left: -1vw;
-        margin: auto;
+    .quote {
+        width: 29vw;
+        left: 25vw; 
     }
-    .header-text :nth-child(1) {
+    .p1 {
+        width: 30vw;
+    }
+    .header-text h1 {
         text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.397),
         3px 6px 0px rgba(0, 0, 0, 0.514);
         letter-spacing: 0;
         font-size: 450%;
         font-weight: 900;
+    }
+    .header-container {
+        width: 95vw;
+        left: -1vw;
+    }
+    header {
+        width: 95vw;
+        position: relative;
+        margin: 0 auto;
+
+        left: 0;
+        top: 25px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header-container {
+        clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+        border-radius: 45px;
+        left: 0;
+        margin: auto;
+        width: 99.5%;
     }
     .header-text {
         position: relative;

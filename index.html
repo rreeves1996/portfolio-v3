@@ -4,7 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan Reeves - Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="./assets/style/style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
     <style>
@@ -37,33 +38,103 @@
     <main>
         <!-- MAIN NAV -->
         <div class="nav-buttons">
-            <img class="about-button" id="about-button" src="./assets/about.png" class="sidebutton">
-            <img class="portfolio-button" id="portfolio-button" src="./assets/portfolio.png" class="sidebutton">
-            <img class="contact-button" id="contact-button" src="./assets/contact.png" class="sidebutton">
+            <img id="home-about" src="./assets/about.png" class="topnavbutton">
+            <img id="home-portfolio" src="./assets/portfolio.png" class="topnavbutton">
+            <img id="home-contact" src="./assets/contact.png" class="topnavbutton">
         </div>
 
         <!-- ABOUT SECTION -->
-        <section class="about">
+        <section id="about" class="about">
             <h1>ABOUT</h1>
+            <div class="about-container">
+                <img class="about-picture" id="picture-1" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
+                <p id="about-1">Growing up, I remember always having a huge interest in tech, programming and design. 
+                    I spent my free time learning graphic design and attending camps during the 
+                    summer for video game programming. And then, with my background that could
+                    easily kick-start my career in programming/software development after high school, I
+                    did what any other impulsive 18 year old would do: started my career in a
+                    completely different field! Since then, I've worked on cars, then switched
+                    to brick and stone masonry. Although I enjoy the hard work and satisfaction of the
+                    trades - something I will never be able to replace - I eventually understood that
+                    switching to a career in programming would be the best option for me, my body, my
+                    brain, and my creativity.</p>
+                <img class="about-picture" id="picture-2" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
+                <p id="about-2">I quickly dove back in to coding. After rekindling my
+                    passion for it, I decided to switch careers to something programming-oriented. 
+                    Today, as I quickly approach my graduation from the UW Full-Stack 
+                    Software Development Bootcamp, I can't help but find myself incredibly excited 
+                    for the future ahead of me. It didn't take long to realize that - just like a
+                    trade - I would have the opportunity to learn and hone my programming skills for
+                    the rest of my life!</p>
+                
+            </div>
         </section>
 
         <!-- PORTFOLIO SECTION -->
-        <section class="portfolio">
-
+        <section id="portfolio" class="portfolio" >
+            <h1>PORTFOLIO</h1>
+            <div class="portfolio-container1">
+                <img class="g-project" id="g-project1" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
+                <img class="g-project" id="g-project2" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
+            </div>
+            <div class="portfolio-container2">
+                <div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
+                    <div class="carousel-cell">
+                        <img class="project" id="project1" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
+                        <div class="label-container">
+                            <p class="project-label">project 1</p>
+                            <p class="project-desc">description</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="project" id="project2" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
+                        <div class="label-container">
+                            <p class="project-label">project 2</p>
+                            <p class="project-desc">description</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="project" id="project3" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
+                        <div class="label-container">
+                            <p class="project-label">project 3</p>
+                            <p class="project-desc">description</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="project" id="project4" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
+                        <div class="label-container">
+                            <p class="project-label">project 4</p>
+                            <p class="project-desc">description</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="project" id="project5" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
+                        <div class="label-container">
+                            <p class="project-label">project 5</p>
+                            <p class="project-desc">description</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- CONTACT SECTION -->
-        <section class="contact">
+        <section id="contact" class="contact">
 
         </section>
 
         <!-- NAV BAR -->
         <div class="nav-bar">
-            <h3>ABOUT</h3>
-            <h3>PROJECTS</h3>
-            <h3>CONTACT</h3>
+            <h3 id="home-about">ABOUT</h3>
+            <h3 id="home-portfolio">PROJECTS</h3>
+            <h3 id="home-contact">CONTACT</h3>
         </div>
     </main>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/script.js"></script>
 </body>
 </html>
