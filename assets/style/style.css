@@ -244,20 +244,20 @@ section {
     font-weight: 500;
 }
 .about-container {
-    width: 80%;
+    width: 75%;
 }
 .about div p {
     font-size: 130%;
     margin: 0px;
     line-height: 2.3rem;
-    text-indent: 25px;
+    text-indent: 45px;
 }
 .about-picture {
     position: relative;
-    width: 255px;
-    height: 255px;
+    width: 235px;
+    height: 235px;
     border-radius: 25px;
-    margin: 20px;
+    margin: 10px;
 }
 #picture-1 {
     float: right;
@@ -266,7 +266,7 @@ section {
     float: left;
 }
 #about-1 {
-    text-align: right;
+    text-align: left;
 }
 #about-2 {
     text-align: left;
@@ -369,7 +369,7 @@ section {
 }
 .g-project-sub-container:hover {
     opacity: 100%;
-    transform: translateY(-4px);
+    transform: translateY(-3px);
     filter: drop-shadow(8px 10px 15px rgba(0, 0, 0, 0.466));
     transition: transform 0.2s ease-out,
     filter 0.2s ease-out,
@@ -437,27 +437,49 @@ section {
 }
 .carousel {
     background-color: #0c0c0c;
-    padding: 2rem 0 1rem 0;
+    
+    padding: 7px 0 0 0;
     border-radius: 10px;
     box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.829);
     border-top: 1px solid rgba(0, 0, 0, 0.493);
     border-bottom: 1px solid rgba(255, 255, 255, 0.205);
-    margin: 0;
+    margin: auto;
+    height: 400px;
 }
 .carousel-cell {
     filter: drop-shadow(4px 7px 8px rgba(0, 0, 0, 0.466));
-    margin: 0;
+    margin-top: 0;
     cursor: pointer;
 }
 .project {
-    margin: 0px 20px 0px 20px;
-    height: 250px;
+    margin: 30px 20px 0px 20px;
+    height: 230px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    opacity: 80%;
+    border-bottom: 1px solid rgba(71, 71, 71, 0.911)
+}
+.project-link {
+    opacity: 85%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     
+    filter: drop-shadow(4px 7px 8px rgba(0, 0, 0, 0.466));
+    transition: transform 0.3s ease-in,
+    filter 0.3s ease-in,
+    opacity 0.2s;
+}
+.project-link:hover {
+    opacity: 100%;
+    transform: translateY(-1px);
+    filter: drop-shadow(8px 10px 15px rgba(0, 0, 0, 0.219));
+    transition: transform 0.15s ease-out,
+    filter 0.15s ease-out,
+    opacity 0.04s;
 }
 .label-container {
-    margin: 0px 20px 0px 20px;
+    margin: 0px 20px 10px 20px;
     padding: 0px 0px 0px 0px;
     
     outline: 1px solid rgba(10, 10, 10, 0.514);
@@ -475,6 +497,7 @@ section {
     background: linear-gradient(36deg, #3f5efb 0%, #fc466b 100%);
     box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.637);
     border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+    border-top: 1px solid rgba(255, 255, 255, 0.747);
 }
 .project-desc {
     color: rgba(255, 255, 255, 0.849);
