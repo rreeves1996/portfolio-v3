@@ -43,7 +43,7 @@
         <!-- ABOUT SECTION -->
         <section id="about" class="about">
             <div class="title-container">
-                <div class="line1"></div><h1>About Me</h1><div class="line2"></div>
+                <div class="line1"></div><h1>About <span class="me">Me</span></h1><div class="line2"></div>
             </div>
             <div class="about-container">
                 <img class="about-picture" id="picture-1" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
@@ -200,7 +200,47 @@
 
         <!-- CONTACT SECTION -->
         <section id="contact" class="contact">
-
+            <div class="title-container">
+                <div class="line1"></div><h1>Contact</h1><div class="line2"></div>
+            </div>
+            
+            <div class="contact-container">
+                <h2>Don't be shy!</h2>
+                <form>
+                    <div class="name-email">
+                        <div class="contact-sub-container">
+                            <label id="name-label" for="name">Name:</label>
+                            <input type="text" id="name" class="contact-name" autocomplete="off" spellcheck="off">
+                        </div>
+                        <div class="contact-sub-container">
+                            <label id="email-label" for="email">Email:</label>
+                            <input type="text" id="email" class="contact-email" autocomplete="off" spellcheck="off">
+                        </div>
+                    </div>
+                    <div class="name-email">
+                        <div class="contact-sub-container">
+                            <label id="subject-label" for="subject">Subject:</label>
+                            <input type="text" id="subject" class="contact-subject" autocomplete="off" spellcheck="off">
+                        </div>
+                        <div class="contact-sub-container" id="business-personal">
+                            <label id="business-personal-label" for="business-personal">Inquiry type:</label>
+                            <div class="checkbox-container">
+                                <label class="checkbox-container2" for="business" id="business-label">
+                                <input type="checkbox" id="business" class="business-personal" value="business" checked="checked">
+                                <span class="checkmark"></span>Business</label>
+                                <label class="checkbox-container2" for="personal" id="personal-label">
+                                <input type="checkbox" id="personal" class="business-personal" value="personal" checked="checked">
+                                <span class="checkmark"></span>Personal</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <label for="message" id="message-label" class="message">Message:</label>
+                    <textarea id="message-box" class="message-box" autocomplete="off" spellcheck="off"></textarea>
+                    <button type="submit" class="submit">Submit</button>
+                    
+                </form>
+            </div>
         </section>
 
         <!-- NAV BAR -->
