@@ -42,9 +42,21 @@ header {
 
 
 }
-/* ul {
-    list-style-type: none;
-} */
+footer {
+    width: 100%;
+    margin-top: 55px;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: rgba(107, 107, 107, 0.39);
+    border-top: 1px solid rgba(255, 255, 255, 0.397);
+}
+code {
+    color: white;
+}
+footer h6 {
+    padding: 9px;
+    margin: 0;
+}
 section {
     position: relative;
     min-height: 100vh;
@@ -159,14 +171,14 @@ section {
     margin: 20px;
     width: 25vw;
     opacity: 0%;
-    animation: fadeIn 2.3s ease-in-out 3.1s forwards;
+    animation: simpleFadeIn 2.3s ease-in-out 3.1s forwards;
 }
 .p2 {
     position: relative;
     margin: 20px;
     left: -22%;
     opacity: 0%;
-    animation: fadeIn 2.3s ease-in-out 3.4s forwards;
+    animation: simpleFadeIn 2.3s ease-in-out 3.4s forwards;
 }
 .p3 {
     position: relative;
@@ -177,7 +189,7 @@ section {
     font-weight: 700;
     color: white;
     opacity: 0%;
-    animation: fadeIn 2.7s ease-in-out 2.35s forwards;
+    animation: simpleFadeIn 2.7s ease-in-out 2.35s forwards;
 }
 .name {
     font-family: 'Montserrat', sans-serif;
@@ -190,7 +202,7 @@ section {
     letter-spacing: .2rem;
     opacity: 0%;
     width: 100px;
-    animation: fadeIn 1.5s ease-in-out 5s forwards;
+    animation: simpleFadeIn 1.5s ease-in-out 5s forwards;
 }
 .nav-buttons img {
     margin: 5%;
@@ -303,19 +315,22 @@ section {
     border-bottom: 1px solid rgba(0, 0, 0, 0.836);
 }
 .about-container p {
-    font-size: 130%;
+    font-size: 120%;
     margin: 0px;
-    line-height: 3.3rem;
+    line-height: 2.2;
     
 }
 .about-picture {
     position: relative;
-    width: 235px;
-    height: 235px;
-    border-radius: 25px;
-    
+    width: 260px;
+    height: 260px;
+    border-radius: 45px;
+    filter: drop-shadow(0px 9px 12px rgba(0, 0, 0, 0.541));
+    border-top: 1px solid rgba(255, 255, 255, 0.904);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.836);
 }
 #picture-1 {
+    opacity: 90%;
     float: right;
     margin: 25px 10px 10px 15px;
 }
@@ -379,7 +394,7 @@ section {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.637);
-    width: 40vw;
+    width: 35vw;
 }
 .bootcamp-header {
     font-weight: 500;
@@ -476,7 +491,7 @@ section {
 }
 .g-project {
     display: flex;
-    margin: 0 0 0 0;
+    margin: auto;
     height: 300px;
     width: 400px;
     border-top-left-radius: 30px;
@@ -668,6 +683,7 @@ section {
 }
 .contact h2 {
     color: rgba(255, 255, 255, 0.815);
+    margin-top: 20px;
     margin-bottom: 20px;
     font-size: 200%;
     font-weight: 500;
@@ -685,21 +701,22 @@ section {
 }
 
 .social-button {
+    justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 15px;
     height: 55px;
     line-height: 0;
     padding-right: 12px;
 }
 #g-hub-button {
-    width: 130px;
-    padding-right: 12px;
+    width: 135px;
+
 }
 #linkedin-button {
-    width: 145px;
+    width: 150px;
 }
 #insta-button {
-    width: 162px;
+    width: 168px;
 }
 .btn-icon {
     margin-right: 7px;
@@ -751,6 +768,11 @@ section {
     flex-direction: column;
     width: 100%;
     margin: 0;
+}
+.button-container {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
 }
 .divider {
     margin-top: 17px;
@@ -915,7 +937,7 @@ label {
     align-items: center;
 }
 
-button {
+.button {
     color: rgba(255, 255, 255, 0.822);
     background-color: rgba(255, 255, 255, 0.137);
     border: 2px solid rgba(255, 255, 255, 0.678);;
@@ -938,7 +960,7 @@ button {
         background-color 0.5s,
         color 0.5s;
 }
-button:hover {
+.button:hover {
     opacity: 100%;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.212);
@@ -950,7 +972,7 @@ button:hover {
         background-color 0.1s,
         color 0.1s;
 }
-button:active {
+.button:active {
     filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.745));
     transition: filter 0.2s;
 }
@@ -958,20 +980,35 @@ button:active {
     display: block;
     opacity: 100%;
     position: fixed;
+    letter-spacing: 1;
+    left: 1%;
+    top: 5%;
+    height: auto;
+    padding: 0px 0px 0px 1.5%;
+    font-size: 125%;
+    border-left: 1px solid rgba(255, 255, 255, 0.432);
+    animation: fadeIn 1.2s cubic-bezier(.36,.83,0,1);
+}
+.mobile-nav-bar {
+    display: none;
+    opacity: 100%;
+    position: fixed;
+    letter-spacing: 1;
     left: 1%;
     top: 10%;
+    height: auto;
     padding: 0px 0px 0px 20px;
     font-size: 125%;
     border-left: 1px solid rgba(255, 255, 255, 0.432);
-    animation: fadeIn 0.5s forwards;
 }
-.nav-bar h3 {
+#nav-bar h3 {
+    line-height: 1.5;
     cursor: pointer;
     opacity: 70%;
     transition: opacity .25s,
     text-shadow .25s;
 }
-.nav-bar h3:hover {
+#nav-bar h3:hover {
     text-shadow: 0px 0px 2px white;
     opacity: 100%;
     transition: opacity .08s,
@@ -979,7 +1016,7 @@ button:active {
 }
 .fade-out {
     display: block;
-    animation: fadeOut 0.3s forwards;
+    animation: fadeOut 1.5s cubic-bezier(.36,.83,0,1);
 }
 .hide {
     display: none;
@@ -1051,11 +1088,52 @@ button:active {
 @keyframes fadeIn {
     0% {
         opacity: 0%;
+        width: 0;
+        letter-spacing: 25;
+        padding-left: 60px;
     }
     
     100% {
         opacity: 100%;
+        width: 200;
         display: block;
+        padding-left: 1.5%;
+    }
+}
+@-webkit-keyframes simpleFadeIn {
+    0% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 100%;
+    }
+}
+@-moz-keyframes simpleFadeIn {
+    0% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 100%;
+    }
+}
+@-o-keyframes simpleFadeIn {
+    0% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 100%;
+    }
+}
+@keyframes simpleFadeIn {
+    0% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 100%;
     }
 }
 
@@ -1104,14 +1182,11 @@ button:active {
         opacity: 100%;
     }
     
-    90% {
-        opacity: 0%;
-        
-    }
-
     100% {
+        letter-spacing: 25;
         opacity: 0%;
         display: none;
+        padding-left: 60px;
     }
 }
 @-webkit-keyframes slideLeft {
@@ -1183,6 +1258,10 @@ button:active {
         left: 0;
         top: 25px;
     }
+    .current-focus {
+        width: 50%;
+    }
+
 }
 @media screen and (max-width: 1200px) {
     .header-container {
@@ -1235,19 +1314,8 @@ button:active {
     }
 }
 @media screen and (max-width: 900px) {
-    .header-text {
-        transform: translateY(-2vw);
-        animation: none;
-    }
-    .header-text h1 {
-        width: 300px;
-        line-height: 1.2;
-        margin-bottom: 0px;
-        text-align: center;
-    }
-    .header-container {
-        width: 95vw;
-        animation: none;
+    :root {
+        font-size: 75%;
     }
     .line {
         animation: none;
@@ -1262,9 +1330,9 @@ button:active {
     .nav-buttons img {
         display: flex;
         margin: 5%;
-        width: 150px;
-        height: 150px;
-        padding: 8px;
+        width: 95px;
+        height: 95px;
+        padding: 0px;
     }
     .nav-buttons img:hover {
         width: 166px;
@@ -1272,11 +1340,159 @@ button:active {
         transform: translateY(-5px);
         padding: 0px;
     }
+    .header-text {
+        transform: translateY(-2vw);
+        animation: none;
+    }
+    .header-text h1 {
+        width: 300px;
+        line-height: 1.2;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .header-text h3 {
+        letter-spacing: 4;
+    }
+    .header-container {
+        width: 95vw;
+        animation: none;
+    }
+    .about, .portfolio, .contact {
+        width: 83vw;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #about-1, #about-2 {
+        font-size: 125%;
+        line-height: 1.75;
+        text-indent: 10px;
+    }
+    .about-container2 h2 {
+        width: 90%;
+        margin-top: 0px;
+    }
+    .current-focus {
+        width: 80%;
+    }
+    .bootcamp {
+        width: 90%;
+
+    }
+    .bootcamp-header {
+        width: 90%;
+        margin: auto;
+        padding: 10px 0 10px 0;
+    }
+    .portfolio-desc {
+        display: none;
+    }
+
+    .g-project-container {
+        width: 95vw;
+        margin: 15px auto;
+    }
+    .g-project {
+        height: 180px;
+        width: 240px;
+    }
+    .g-project-desc {
+        width: 240px;
+        font-size: 85%;
+    }
+    .title {
+        margin: 18px 0 18px 0;
+    }
+    .portfolio-container1 {
+        padding-bottom: 0px;
+    }
+    .portfolio-container2 {
+        padding-top: 0px;
+        width: 90vw;
+    }
+    .portfolio-container2 h2 {
+        margin: 20px auto;
+    }
+    .carousel {
+        width: 70%;
+        height: 240px;
+        padding: 20px 0 0 0;
+        margin: 0 auto;
+        align-items: center !important;
+    }
+    .project {
+        height: 120px;
+        width: 170px;
+        margin: 0 auto;
+    }
+    .carousel-cell {
+        margin: 0px;
+        width: 200px;
+    }
+    .label-container {
+        margin: 0 auto;
+        width: 170px;
+    }
+    .flickity-viewport {
+        height: 300px !important;
+    }
+    .project-label {
+        font-size: 85%;
+        padding: 5px 0 5px 0;
+    }
+    .project-desc {
+        font-size: 75%;
+    }
+    .title-container {
+        margin-top: 30px;
+    }
+    .contact-desc {
+        width: 65vw;
+    }
+    .divider2 {
+        width: 80vw;
+        margin: auto;
+    }
+    .contact h2 {
+        margin: 20px auto;
+    }
+    .btn-icon {
+        width: 21px;
+        height: 21px;
+        margin-right: 5px;
+    }
+    .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 95%;
+        margin: auto;
+    }
+    .social-button {
+        height: 45px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        font-size: 90%;
+    }
+    .nav-bar h3 {
+        font-size: 120%;
+        line-height: 1.75;
+    }
+    #g-hub-button {
+        width: 100px;
+    }
+    #linkedin-button {
+        width: 110px;
+    }
+    #insta-button {
+        width: 123px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
     .about h1, .portfolio h1, .contact h1 {
-
         font-size: 200%;
         letter-spacing: 0;
         font-weight: 500;
@@ -1294,10 +1510,26 @@ button:active {
         box-shadow: inset 0 0 90px rgba(255, 255, 255, 0.055);
         background-color: rgb(43, 41, 46);
     }
+    .about-picture {
+        width: 25vw;
+        height: 25vw;
+        margin: 20px auto;
+    }
+    .about-container, .about-container2 {
+        width: 90%;
+    }
     .me {
         display: none;
     }
     .line1, .line2 {
+        display: none;
+    }
+    .nav-bar {
+        animation: none;
+        display: none;
+    }
+    .fade-out {
+        animation: none;
         display: none;
     }
 }

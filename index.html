@@ -6,8 +6,9 @@
     <title>Ryan Reeves - Portfolio</title>
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style/style.css"/>
     <style>
         html {
@@ -47,27 +48,26 @@
                 <div class="line1"></div><h1>About <span class="me">Me</span></h1><div class="line2"></div>
             </div>
             <div class="about-container">
-                <img class="about-picture" id="picture-1" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
-                <p id="about-1">Growing up, I remember always having a huge interest in tech. My other
-                    interest was music & art - I started piano at age 3, and have always been an artist.
-                    Both of these interests would eventually naturally coalesce into graphic/UI design.
-                    As I got older, I spent my free time learning graphic design and attending camps during the 
-                    summer for video game programming. And then, with my background that could
-                    easily kick-start my career in programming/software development after high school, I
-                    did what any other impulsive 18 year old would do: started my career in a
-                    completely different field! Since then, I've worked on cars, then switched
-                    to brick and stone masonry which I have been in for almost four years. 
-                    Although I enjoy the hard work and satisfaction of the
-                    trades - something I will never be able to replace - I eventually understood that
-                    switching to a career in programming would be the best option for me, my body, my
-                    brain, and the creative side of my personality.</p>
-                <img class="about-picture" id="picture-2" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
-                <p id="about-2">I quickly dove back into programming. After rekindling my
-                    passion for it, I decided to switch careers to something programming-oriented. 
-                    Today, as I learn more and more about modern tech, software development, and UI/UX
-                    design, I find myself incredibly excited to continue my journey in the tech industry. 
-                    It didn't take long to realize that - just like a trade - I would have the opportunity 
-                    to learn and hone my programming skills for the rest of my life!</p>
+                <img class="about-picture" id="picture-1" src="./assets/about1.png">
+                <p id="about-1">
+                    I am a lifelong musician, learner, and oxford comma user. Being born in 1996, I was fortunate
+                    enough to see computers and technology change dramatically over the past 26 years. As
+                    I navigated through my childhood and teenage years, I became more and more keen on 
+                    combining my passion for the arts with technology. Ever since I tried my hand at graphic
+                    design as a teenager, I picked apart every website I visited and app I used - searching for 
+                    the nuances that made certain websites or apps just "feel" and look better as a whole.
+                </p>
+                <img class="about-picture" id="picture-2" src="./assets/about2.png">
+                <p id="about-2">
+                    I started programming in my teenage years, attending video game development camps. Although
+                    I loved video games (and still do), my interest strayed away from programming them. What 
+                    really intrigued me was the creative ways I could get something to work, or the frustrating
+                    issues I would have that would often reveal interesting details about how the code worked.
+                    I recently decided to switch out of stone/brick masonry and the trades to pursue a career 
+                    in something programming related. It excites me to know that I have only scratched the surface
+                    in my learning, and I plan to continue to do my best everyday to develop my skillsets further!
+
+                </p>
             </div>
             <div class="about-container2">
                 <h2>What is my current focus?</h2>
@@ -122,7 +122,7 @@
                     <h3>First project:</h3>
                     <h3 class="title">Fork the Food</h3>
                     <a class="g-project-sub-container" href="https://eyesackel.github.io/fork-the-food/">
-                        <img class="g-project" id="g-project1" src="./assets/ftf.png">
+                        <img class="g-project" id="g-project1" src="./assets/proj-pictures/ftf.png">
                         <p class="g-project-desc">Application that generates recipes based on inputted ingredients using a third-party ingredient API along with YouTube's API</p>
                     </a>
                     <div class="repo-link-container">
@@ -136,7 +136,7 @@
                     <h3>Second project:</h3>
                     <h3 class="title">Stack My Paddle</h3>
                     <a class="g-project-sub-container" href="https://stack-my-paddle.herokuapp.com/">
-                        <img class="g-project" id="g-project2" src="./assets/smp.png">
+                        <img class="g-project" id="g-project2" src="./assets/proj-pictures/smp.png">
                         <p class="g-project-desc">Application/website with integrated Handlebars functionality that locates nearby pickleball courts using a third-party API</p>
                     </a>
                     <div class="repo-link-container">
@@ -152,7 +152,7 @@
                 <div class="carousel" data-flickity='{ "contain": true, "wrapAround": true }'>
                     <div class="carousel-cell">
                         <a class="project-link" href="https://github.com/rreeves1996/week9-hw">        
-                            <img class="project" id="project1" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
+                            <img class="project" id="project1" src="./assets/proj-pictures/readmegen.png">
                             <div class="label-container">
                                 <p class="project-label">README Generator</p>
                                 <p class="project-desc">Command line, Inquirer</p>
@@ -161,7 +161,7 @@
                     </div>
                     <div class="carousel-cell">
                         <a class="project-link" href="https://github.com/rreeves1996/week13-hw"> 
-                            <img class="project" id="project2" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
+                            <img class="project" id="project2" src="./assets/proj-pictures/ecommerce.png">
                             <div class="label-container">
                                 <p class="project-label">E-Commerce Back-End</p>
                                 <p class="project-desc">Node, Sequelize/MySQL, ORM</p>
@@ -170,7 +170,7 @@
                     </div>
                     <div class="carousel-cell">
                         <a class="project-link" href="https://github.com/rreeves1996/week10-hw"> 
-                            <img class="project" id="project3" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
+                            <img class="project" id="project3" src="./assets/proj-pictures/teamgen.png">
                             <div class="label-container">
                                 <p class="project-label">Team Profile Generator</p>
                                 <p class="project-desc">Node, Command line, Inquirer</p>
@@ -179,7 +179,7 @@
                     </div>
                     <div class="carousel-cell">
                         <a class="project-link" href="https://github.com/rreeves1996/week12-hw"> 
-                            <img class="project" id="project4" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
+                            <img class="project" id="project4" src="./assets/proj-pictures/emptracker.png">
                             <div class="label-container">
                                 <p class="project-label">HR Employee Tracker</p>
                                 <p class="project-desc">Node, Sequelize/MySQL, Inquirer</p>
@@ -188,7 +188,7 @@
                     </div>
                     <div class="carousel-cell">
                         <a class="project-link" href="https://github.com/rreeves1996/week6-hw"> 
-                            <img class="project" id="project5" href="#" src="https://wtwp.com/wp-content/uploads/2015/06/placeholder-image.png">
+                            <img class="project" id="project5" href="#" src="./assets/proj-pictures/weather.png">
                             <div class="label-container">
                                 <p class="project-label">Weather Dashboard</p>
                                 <p class="project-desc">Third-Party APIs, JavaScript</p>
@@ -219,9 +219,10 @@
                 been a huge on Twitter. Here is everything I have to offer, please forgive me:
             </div>
             <div class="button-container">
-                <a href="https://github.com/rreeves1996"><button type="button" class="social-button" id="g-hub-button"><img src="./assets/GitHub-Mark-Light-32px.png" id="g-hub-icon" alt="github-mark" class="btn-icon">GitHub</button></a>
-                <a href="https://www.linkedin.com/in/ryan-reeves-908b69248/"><button type="button" class="social-button" id="linkedin-button"><img src="./assets/—Pngtree—linkedin white icon_3570423.png"  id="linkedin-icon" alt="linkedin-mark" class="btn-icon">LinkedIn</button></a>
-                <a href="https://www.instagram.com/ryanmakesloudnoises/"><button type="button" class="social-button" id="insta-button"><img src="./assets/—Pngtree—instagram white icon free logo_3570433.png" id="instagram-icon" alt="instagram-mark" class="btn-icon">Instagram</button></a>
+                <a href="https://www.linkedin.com/in/ryan-reeves-908b69248/"><button type="button" class="social-button button" id="linkedin-button"><img src="./assets/—Pngtree—linkedin white icon_3570423.png"  id="linkedin-icon" alt="linkedin-mark" class="btn-icon">LinkedIn</button></a>
+
+                <a href="https://github.com/rreeves1996"><button type="button" class="social-button button" id="g-hub-button"><img src="./assets/GitHub-Mark-Light-32px.png" id="g-hub-icon" alt="github-mark" class="btn-icon">GitHub</button></a>
+                <a href="https://www.instagram.com/ryanmakesloudnoises/"><button type="button" class="social-button button" id="insta-button"><img src="./assets/—Pngtree—instagram white icon free logo_3570433.png" id="instagram-icon" alt="instagram-mark" class="btn-icon">Instagram</button></a>
             </div>
             
             <div class="contact-container">
@@ -257,7 +258,7 @@
                     <div class="divider"></div>
                     <label for="message" id="message-label" class="message">Message:</label>
                     <textarea id="message-box" class="message-box" autocomplete="off" spellcheck="off"></textarea>
-                    <button type="submit" class="submit">Submit</button>
+                    <button type="submit" class="button submit">Submit</button>
                     
                 </form>
             </div>
@@ -270,9 +271,12 @@
             <h3 id="contact-nav">CONTACT</h3>
         </div>
     </main>
+    <footer><h6><code>Made with ❤️ by your friendly neighborhood stone mason</code></h5></footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script type="text/javascript" src="./assets/script/script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
