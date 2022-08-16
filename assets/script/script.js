@@ -21,6 +21,36 @@ for (let i = 0; i < sections.length; i++) {
     });
 }
 
+function navBarDisplay() {
+    var navBar = document.getElementById("nav-bar");
+    var scrollValue = window.scrollY;
+    if(scrollValue < 800 && !navBar.classList.contains('hide') && !navBar.classList.contains('fade-out')) {
+        hideNavBar();
+    } else if(scrollValue > 800 && navBar.classList.contains('hide') || scrollValue > 800 && navBar.classList.contains('fade-out')) {
+        
+        showNavBar();
+    } else {
+
+    }
+};
+
+function showNavBar() {
+    var navBar = document.getElementById("nav-bar");
+    navBar.classList.remove('hide');
+    navBar.classList.remove('fade-out');
+};
+
+function hideNavBar() {
+    var navBar = document.getElementById("nav-bar");
+    navBar.classList.add('fade-out');
+    setTimeout(() => {
+        navBar.classList.add('hide');
+        navBar.classList.remove('fade-out');
+    }, 1000);
+
+};
+
+window.addEventListener('scroll', navBarDisplay);
 
 var flkty = new Flickity(carousel, {
   // options

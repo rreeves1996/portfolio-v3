@@ -10,10 +10,11 @@ body {
     background-color: var(--off-black);
     font-family: 'Lora', serif;
     color: white;
+    
 }
 a {
     text-decoration: none !important;
-    color: white;
+    color: white !important;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
@@ -80,6 +81,7 @@ section {
     padding .1s,
     font-size .1s;
 }
+
 .header-container {
     position: absolute;
     width: 98vw;
@@ -114,11 +116,12 @@ section {
 }
 .header-text h1, .header-text h3{
     position: relative;
-    margin: 2rem auto;
+    margin: 20px;
     justify-content: center;
     align-items: center;
 }
 .header-text h2 {
+    margin: 20px;
     font-size: 300%;
     height: 0px;
     border-top: 1px solid rgba(0, 0, 0, 0.158);
@@ -249,23 +252,30 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 70px 20px 50px 20px;
 }
-.about h1, .portfolio h1, .contact h1 {
+.title-container h1 {
+    display: flex;
     text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.473);
     font-size: 500%;
     letter-spacing: .5rem;
     font-weight: 500;
     min-width: 650px;
     height: 200px;
+    justify-content: center;
     text-align: center;
+    align-items: center;
     padding: 50px;
-    margin: 50px 20px 50px 20px auto;
+
     border-radius: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.192);
     border-bottom: 1px solid rgba(0, 0, 0, 0.507);
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.678));
     box-shadow: inset 0 0 90px rgba(255, 255, 255, 0.055);
     background-color: rgb(43, 41, 46);
+}
+.me {
+    margin-left: 6%;
 }
 .line1, .line2 {
     display: flex;
@@ -288,14 +298,14 @@ section {
 }
 .about-container {
     width: 75%;
-    margin: 30px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     padding-bottom: 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.836);
 }
 .about-container p {
     font-size: 130%;
     margin: 0px;
-    line-height: 2.3rem;
+    line-height: 3.3rem;
     
 }
 .about-picture {
@@ -307,11 +317,11 @@ section {
 }
 #picture-1 {
     float: right;
-    margin: 25px 10px 7px 7px;
+    margin: 25px 10px 10px 15px;
 }
 #picture-2 {
     float: left;
-    margin: 12px 17px 7px 10px ;
+    margin: 15px 25px 10px 10px ;
 }
 #about-1 {
     text-indent: 45px;
@@ -332,12 +342,12 @@ section {
     align-items: center;
     justify-content: center;
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(255, 255, 255, 0.055) 90%, rgba(255, 255, 255, 0.089) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(255, 255, 255, 0.055) 90%, rgba(255, 255, 255, 0.13) 100%);
 
 }
 .about-container2 h2 {
     color: rgba(255, 255, 255, 0.815);
-    margin: 50px 0 0 0;
+    margin: 30px 0 20px 0;
     font-size: 200%;
     font-weight: 500;
     letter-spacing: 7;
@@ -353,6 +363,7 @@ section {
     line-height: 1.5;
     font-size: 120%;
 }
+
 .bootcamp {
     margin: 8px 20px 10px 20px;
     padding: 0px 4px 4px 4px;
@@ -370,7 +381,6 @@ section {
     box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.637);
     width: 40vw;
 }
-
 .bootcamp-header {
     font-weight: 500;
     text-align: center;
@@ -388,13 +398,14 @@ section {
     display: flex;
     flex-direction: column;
     margin: auto;
+    width: 100%;
     align-items: center;
     justify-content: space-evenly;
     color: rgba(255, 255, 255, 0.849);
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.377);
     background: linear-gradient(36deg, #45528f98 0%, #9649599c 100%);
     margin: 0px;
-    padding: 16px 0px 16px 0px;
+    padding: 11px 0px 11px 0px;
     background-color: rgba(0, 0, 0, 0.822);
     box-shadow: inset 0px 0px 170px 10px rgba(0, 0, 0, 0.74),
     inset 0px 0px 15px rgb(0, 0, 0);
@@ -429,12 +440,13 @@ section {
     align-items: center;
     min-height: 100vh;
     width: 75vw;
+    padding-bottom: 15px;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgb(21, 20, 22) 11%, rgb(21, 20, 22) 89%, rgba(0,0,0,0) 100%);
 }
 .portfolio h2 {
     color: rgba(255, 255, 255, 0.815);
-    margin-bottom: 10px;
+    margin: 0px 0 20px 0;
     font-size: 200%;
     font-weight: 500;
     letter-spacing: 7;
@@ -472,7 +484,6 @@ section {
     cursor: pointer;
     border-bottom: 1px solid rgba(0, 0, 0, 0.007);
 }
-
 .g-project-container {
     padding: 0;
     margin: 50px 50px 0 50px;
@@ -556,10 +567,10 @@ section {
 }
 .portfolio-container2 {
     width: 80%;
-    margin: 0 0 2.5rem 0;
+    margin: 0 0 30px 0;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.205);
-    padding-top: 2rem;
+    padding-top: 50px;
     padding-bottom: 0;
 }
 .portfolio-container2 h2 {
@@ -655,16 +666,58 @@ section {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgb(21, 20, 22) 11%, rgb(21, 20, 22) 89%, rgba(0,0,0,0) 100%);
 }
+.contact h2 {
+    color: rgba(255, 255, 255, 0.815);
+    margin-bottom: 20px;
+    font-size: 200%;
+    font-weight: 500;
+    letter-spacing: 7;
+}
+.contact-desc {
+    display: flex;
+    text-align: center;
+    width: 40vw;
+    margin: 0px 20px 20px 20px;
+    letter-spacing: .4;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 120%;
+}
+
+.social-button {
+    align-items: center;
+    margin: 10px;
+    height: 55px;
+    line-height: 0;
+    padding-right: 12px;
+}
+#g-hub-button {
+    width: 130px;
+    padding-right: 12px;
+}
+#linkedin-button {
+    width: 145px;
+}
+#insta-button {
+    width: 162px;
+}
+.btn-icon {
+    margin-right: 7px;
+    width: 32px;
+    height: 32px;
+}
+
 .contact-container h2 {
     font-weight: 500;
     text-align: center;
     justify-content: center;
     align-items: center;
     text-transform: none;
-    margin: 30px 15px 10px 15px;
+    margin: 35px 15px 15px 15px;
     padding: 0;
+    letter-spacing: 1;
     font-family: 'Montserrat', sans-serif;
-    font-size: 250%;
+    font-size: 275%;
     line-height: 1.5;
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.274);
 
@@ -679,11 +732,10 @@ section {
     background-color: rgba(255, 255, 255, 0.123);
     background: linear-gradient(36deg, #3f5efb 0%, #fc466b 100%);
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.836);
     border-top: 1px solid rgba(255, 255, 255, 0.747);
-    outline: 1px solid rgba(10, 10, 10, 0.041);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.637);
@@ -704,6 +756,12 @@ section {
     margin-top: 17px;
     border-top: 1px solid rgba(0, 0, 0, 0.158);
     border-bottom: 1px solid rgba(255, 255, 255, 0.473);
+}
+.divider2 {
+    margin: 30px 0 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.836);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+    width: 45vw;
 }
 .checkbox-container {
     display: flex;
@@ -747,11 +805,8 @@ section {
   display: none;
 }
 
-.checkbox-container2 input:checked ~ .checkmark {
-    background-color: rgba(0, 0, 0, 0.274);
-}
 .checkbox-container2:hover input ~ .checkmark {
-    background-color: rgba(0, 0, 0, 0.493);
+    background-color: rgba(0, 0, 0, 0.432);
 }
 /* Show the checkmark when checked */
 .checkbox-container2 input:checked ~ .checkmark:after {
@@ -760,14 +815,14 @@ section {
 
 /* Style the checkmark/indicator */
 .checkbox-container2 .checkmark:after {
-  right: 0px;
+  right: 1px;
   bottom: 5px;
-  width: 8px;
-  height: 16px;
+  width: 10px;
+  height: 18px;
   border: solid white;
   border-width: 0 3px 3px 0;
-  border-radius: 1px;
-  filter: drop-shadow(3px 2px 2px rgba(0, 0, 0, 0.356));
+  border-radius: 2px;
+  filter: drop-shadow(3px 2px 1px rgba(0, 0, 0, 0.274));
   -webkit-transform: rotate(40deg);
   -ms-transform: rotate(40deg);
   transform: rotate(40deg);
@@ -807,15 +862,20 @@ section {
     text-transform: uppercase;
 }
 #message-box {
-    margin: 9px 12px 3px 12px;
+    margin: 3px 12px 0px 12px;
 }
+
 form {
     display: flex;
     flex-direction: column;
-    padding: 0px 25px 25px 25px;
+    padding: 0px 25px 0px 25px;
+    margin: 0;
 }
 label {
+    color: rgba(255, 255, 255, 0.87);
     margin: 0;
+    font-weight: 500;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.377);
 }
 textarea {
     background-color: rgba(0, 0, 0, 0.822);
@@ -847,14 +907,63 @@ label {
     width: 300px;
     margin: auto;
 }
-.nav-bar {
+.submit {
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
+button {
+    color: rgba(255, 255, 255, 0.822);
+    background-color: rgba(255, 255, 255, 0.137);
+    border: 2px solid rgba(255, 255, 255, 0.678);;
+    border-radius: 30px;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.596);
+    opacity: 95%;
+
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1;
+    font-size: 100%;
+    margin: 15px auto;
+    font-weight: 900;
+    box-shadow: 0 0 1px rgb(255, 255, 255);
+    -webkit-transition: width .8s cubic-bezier(.36,.26,0,1.02), filter 1s, border-color 0.5s, color 1s;
+    -moz-transition: width .8s cubic-bezier(.36,.26,0,1.02), filter 1s, border-color 0.5s, color 1s;
+    -o-transition: width .8s cubic-bezier(.36,.26,0,1.02), filter 1s, border-color 0.5s, color 1s;
+    transition: border-color 0.5s, 
+        box-shadow 0.5s,
+        background-color 0.5s,
+        color 0.5s;
+}
+button:hover {
+    opacity: 100%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.212);
+    border: 2px solid rgb(229, 255, 251);
+    box-shadow: 0 0 13px rgba(255, 255, 255, 0.315), inset 0px 0px 5px 2px rgba(255, 255, 255, 0.479);
+    color: white;
+    transition: border-color 0.1s, 
+        box-shadow 0.1s, 
+        background-color 0.1s,
+        color 0.1s;
+}
+button:active {
+    filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.745));
+    transition: filter 0.2s;
+}
+.nav-bar {
+    display: block;
+    opacity: 100%;
     position: fixed;
-    left: 2%;
+    left: 1%;
     top: 10%;
-    padding: 0px 0px 0px 40px;
+    padding: 0px 0px 0px 20px;
     font-size: 125%;
     border-left: 1px solid rgba(255, 255, 255, 0.432);
+    animation: fadeIn 0.5s forwards;
 }
 .nav-bar h3 {
     cursor: pointer;
@@ -867,6 +976,13 @@ label {
     opacity: 100%;
     transition: opacity .08s,
     text-shadow .08s;
+}
+.fade-out {
+    display: block;
+    animation: fadeOut 0.3s forwards;
+}
+.hide {
+    display: none;
 }
 @-webkit-keyframes slideLeft {
     0% {
@@ -901,7 +1017,7 @@ label {
     }
     
     100% {
-        right: 0;
+        right: -.3vw;
     }
 }
 
@@ -939,9 +1055,65 @@ label {
     
     100% {
         opacity: 100%;
+        display: block;
     }
 }
 
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 100%;
+    }
+    
+    90% {
+        opacity: 0%;
+    }
+
+    100% {
+        display: none;
+    }
+}
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 100%;
+    }
+    
+    90% {
+        opacity: 0%;
+    }
+
+    100% {
+        display: none;
+    }
+}
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 100%;
+    }
+    
+    90% {
+        opacity: 0%;
+    }
+
+    100% {
+        display: none;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        display: block;
+        opacity: 100%;
+    }
+    
+    90% {
+        opacity: 0%;
+        
+    }
+
+    100% {
+        opacity: 0%;
+        display: none;
+    }
+}
 @-webkit-keyframes slideLeft {
     0% {
         right: 100vw;
@@ -1001,7 +1173,7 @@ label {
     }
     .header-container {
         width: 95vw;
-        left: -1vw;
+        left: -1.8vw;
     }
     header {
         width: 95vw;
