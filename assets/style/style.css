@@ -315,10 +315,10 @@ section {
     border-bottom: 1px solid rgba(0, 0, 0, 0.836);
 }
 .about-container p {
-    font-size: 120%;
+    font-size: 125%;
     margin: 0px;
-    line-height: 2.2;
-    
+    line-height: 1.9;
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.774);
 }
 .about-picture {
     position: relative;
@@ -372,7 +372,7 @@ section {
     display: flex;
     text-align: center;
     width: 40vw;
-    margin: 20px 20px 50px 20px auto;
+    margin: 40px 20px 0px 20px;
     letter-spacing: .7;
     font-weight: 500;
     line-height: 1.5;
@@ -380,7 +380,7 @@ section {
 }
 
 .bootcamp {
-    margin: 8px 20px 10px 20px;
+    margin: 30px 20px 10px 20px;
     padding: 0px 4px 4px 4px;
     filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.767));
     background-color: rgba(255, 255, 255, 0.123);
