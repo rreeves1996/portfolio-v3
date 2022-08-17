@@ -12,6 +12,7 @@ body {
     color: white;
     
 }
+
 a {
     text-decoration: none !important;
     color: white !important;
@@ -312,39 +313,51 @@ section {
     width: 75%;
     margin: 0px 0px 0px 0px;
     padding-bottom: 50px;
+    padding-top: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.836);
 }
 .about-container p {
     font-size: 125%;
+    text-indent: 45px;
     margin: 0px;
     line-height: 1.9;
+    letter-spacing: .6;
     text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.774);
 }
 .about-picture {
     position: relative;
-    width: 260px;
-    height: 260px;
-    border-radius: 45px;
+    width: 290px;
+    height: 290px;
+    
+    border-radius: 15px;
     filter: drop-shadow(0px 9px 12px rgba(0, 0, 0, 0.541));
-    border-top: 1px solid rgba(255, 255, 255, 0.904);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.836);
+    /* border-top: 1px solid rgba(255, 255, 255, 0.904);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.836); */
 }
 #picture-1 {
     opacity: 90%;
     float: right;
-    margin: 25px 10px 10px 15px;
+    margin: 20px 20px 20px 40px;
 }
 #picture-2 {
     float: left;
-    margin: 15px 25px 10px 10px ;
+    margin: 40px 40px 20px 20px;
 }
 #about-1 {
-    text-indent: 45px;
-    margin-top: 10px;
-    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding-top: 0;
+}
+#about-1:first-of-type {
+    margin-top: 0px;
+    padding-top: 0;
+    text-indent: 0;
+    text-align: center;
 }
 #about-2 {
-    text-indent: 45px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding-top: 0;
     text-align: left;
 }
 .about-container2 {
@@ -706,17 +719,18 @@ section {
     margin: 15px;
     height: 55px;
     line-height: 0;
-    padding-right: 12px;
+    padding: 0 12px 0 8px;
+    border-radius: 10px !important;
 }
 #g-hub-button {
-    width: 135px;
+    width: 138px;
 
 }
 #linkedin-button {
-    width: 150px;
+    width: 153px;
 }
 #insta-button {
-    width: 168px;
+    width: 171px;
 }
 .btn-icon {
     margin-right: 7px;
@@ -771,7 +785,7 @@ section {
 }
 .button-container {
     display: flex;
-    width: 50%;
+    width: 500px;
     justify-content: space-evenly;
 }
 .divider {
