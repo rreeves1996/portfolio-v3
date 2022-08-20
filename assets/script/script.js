@@ -1,24 +1,29 @@
 var carousel = document.querySelector('.carousel');
+var exploreButton = document.getElementById("explore-button");
+
 const navBarButtons = [
-    aboutButtonNav = document.getElementById("about-nav"),
-    portfolioButtonNav = document.getElementById("portfolio-nav"),
-    contactButtonNav = document.getElementById("contact-nav")];
-const homeNavButtons = [
-    aboutButtonHome = document.getElementById("about-home"),
-    portfolioButtonHome = document.getElementById("portfolio-home"),
-    contactButtonHome = document.getElementById("contact-home")];
+    aboutNav = document.getElementById("about-nav"),
+    portfolioNav = document.getElementById("portfolio-nav"),
+    contactNav = document.getElementById("contact-nav")];
 const sections = [
     about = document.getElementById("about"),
     portfolio = document.getElementById("portfolio"),
     contact = document.getElementById("contact")];
 
-
+exploreButton.addEventListener("click", function() {
+    setTimeout(() =>{
+        exploreButton.setAttribute('data-before', ':)');
+    }, 100);
+    setTimeout(() =>{
+        sections[0].scrollIntoView();
+    }, 1000);
+    setTimeout(() =>{
+        exploreButton.setAttribute('data-before', 'explore');
+    }, 2000);
+});
 // Loop to add scrolling function when hitting certain nav buttons
 for (let i = 0; i < sections.length; i++) {
     navBarButtons[i].addEventListener("click", function() {
-        sections[i].scrollIntoView();
-    });
-    homeNavButtons[i].addEventListener("click", function() {
         sections[i].scrollIntoView();
     });
 }
@@ -64,7 +69,7 @@ function hideNavBar() {
     };
 };
 
-window.addEventListener('scroll', navBarDisplay);
+
 
 var flkty = new Flickity(carousel, {
   // options
@@ -77,9 +82,14 @@ var flkty = new Flickity(carousel, {
 function init() {
     var navBar = document.getElementById("nav-bar");
     var scrollValue = window.scrollY;
+
     if(scrollValue < 700) {
         hideNavBar();
     } else if (scrollValue > 700 && !navBar.classList.contains('fade-out') && navBar.classList.contains('hide')) {
         showNavBar();
     };
+
+    exploreButton.setAttribute('data-before', 'explore');
 };
+init();
+window.addEventListener('scroll', navBarDisplay);

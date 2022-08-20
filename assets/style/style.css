@@ -64,36 +64,7 @@ section {
     color: rgba(255, 255, 255, 0.884);
     filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.315));
 }
-.projects-button {
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    line-height: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    padding: 35px 17px 35px 17px;
-    border-radius: 75px;
-    margin: auto;
-    font-size: 100%;
-    background-color: rgb(95, 108, 172);
-    outline: 2px solid rgb(255, 255, 255);
-    font-size: 120%;
-    cursor: pointer;
-    transition: filter .8s
-    text-shadow .6s,
-    padding .2s,
-    font-size .2s;
-}
-.projects-button:hover {
-    font-size: 125%;
-    padding: 37px 19px 37px 19px;
-    filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.308));
-    text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.493);
-    transition: filter .3s,
-    text-shadow .3s,
-    padding .1s,
-    font-size .1s;
-}
+
 
 .header-container {
     position: absolute;
@@ -105,7 +76,6 @@ section {
     top: -20px;
     background: linear-gradient(36deg, #3f5efb 0%, #fc466b 100%);
     clip-path: polygon(0 0, 60% 0%, 40% 100%, 0 100%, 0 0);
-    /* border: 3px solid rgba(255, 255, 255, 0.747); */
     box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.637);
     animation: slideLeft 1.9s cubic-bezier(.16,.78,.06,1.02) forwards .7s;
 }
@@ -205,50 +175,121 @@ section {
     width: 100px;
     animation: simpleFadeIn 1.5s ease-in-out 5s forwards;
 }
-.nav-buttons img {
-    margin: 5%;
-    width: 200px;
-    height: 200px;
-    outline: 3px solid rgb(255, 255, 255);
-    border-radius: 250px;
-    padding: 8px;
-    opacity: 15%;
-    transition: filter 0.75s ease-out,
-    box-shadow 0.65s,
-    outline .4s,
-    opacity .2s,
-    width 0.25s,
-    height 0.25s,
-    padding 0.25s,
-    transform 0.35s;
-}
-.nav-buttons {
+.explore-container {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
     min-height: 50vh;
     width: 90vw;
 }
-.nav-buttons img:hover {
-    width: 216px;
-    height: 216px;
-    transform: translateY(-5px);
-    padding: 0px;
+
+.explore-button-container {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 80px;
+    background-color: rgb(22, 22, 22);
+    box-shadow: inset 0px 0px 25px rgba(139, 139, 139, 0.075);
+    padding: 55px;
+    margin: 10px auto;
+    opacity: 30%;
     cursor: pointer;
+    transition: opacity .5s,
+    filter .5s,
+    border .2s,
+    padding .7s 0.1s;
+}
+.explore-button-container .arrowDown {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 400%;
+    transition: transform 0.9s,
+    text-shadow 0.5s,
+    font-size 0.9s;
+}
+.explore-button-container::before {
+    font-family: 'Montserrat', sans-serif;
+    content: attr(data-before);
+    display: flex;
+    position: absolute;
+    top: -95%;
+    font-size: 220%;
+    opacity: 0%;
+    text-transform: lowercase;
+    filter: blur(4px);
+    transition: opacity 2s,
+    letter-spacing 2.3s,
+    font-size 1.7s,
+    filter 1.2s;
+}
+.explore-button-container:hover::before {
+    font-size: 240%;
+    opacity: 90%;
+    filter: blur(0px);
+    letter-spacing: 2.5;
+    text-shadow:  0px 0px 6px rgba(255, 255, 255, 0.719);
+
+}
+.explore-button-container:hover {
+    background-color: rgb(37, 37, 37);
+    padding: 65px;
     opacity: 80%;
-    filter: drop-shadow(0px 0px 50px rgba(255, 0, 76, 0.521));
-    outline: 3px solid rgba(255, 255, 255, 0.562);
-    box-shadow: inset 0px 30px 40px rgba(255, 255, 255, 0.103),
-    inset 0px 0px 15px rgba(255, 255, 255, 0.397);
-    transition: filter 0.35s ease-out,
-    box-shadow 0.45s,
-    outline 0.45s,
-    width 0.08s ease-in-out,
-    height 0.08s ease-in-out,
-    padding 0.08s ease-in-out,
-    transform 0.25s ease-in-out;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.411));
+    border: 6px solid rgb(255, 255, 255);
+    transition: opacity 0.5s,
+    filter 0.7s,
+    padding .5s,
+    border .3s;
+
+}
+
+.explore-button-container:hover .arrowDown {
+    text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.548);
+    font-size: 450%;
+    transition:
+    font-size 0.5s;
+}
+.explore-button-container:hover #unhovered-half {
+    transform: translateY(-24%);
+    transition: transform 0.35s;
+}
+.explore-button-container:hover #hovered-half {
+    transform: translateY(24%);
+    transition: transform 0.35s;
+}
+
+.explore-button-container:active {
+    background-color: rgb(27, 27, 27);
+    padding: 60px;
+    opacity: 70%;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.568));
+    border: 5px solid rgb(255, 255, 255);
+    transition: opacity 0.02s,
+    filter 0.02s;
+}
+.explore-button-container:active .arrowDown {
+    font-size: 430%;
+    transition:
+    font-size 0.02s;
+}
+.explore-button-container:active #unhovered-half {
+    transform: translateY(-14%);
+    transition: transform 0.02s;
+}
+.explore-button-container:active #hovered-half {
+    transform: translateY(14%);
+    transition: transform 0.02s;
 }
 
 .about {
@@ -265,7 +306,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 70px 20px 50px 20px;
+    margin: 70px 20px 20px 20px;
 }
 .title-container h1 {
     display: flex;
@@ -314,7 +355,7 @@ section {
     margin: 0px 0px 0px 0px;
     padding-bottom: 50px;
     padding-top: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.836);
+
 }
 .about-container p {
     font-size: 125%;
@@ -348,11 +389,19 @@ section {
     margin-bottom: 15px;
     padding-top: 0;
 }
-#about-1:first-of-type {
-    margin-top: 0px;
-    padding-top: 0;
-    text-indent: 0;
+.about-container h3 {
+    position: relative;
     text-align: center;
+    text-transform: none;
+    line-height: 1.5;
+    letter-spacing: 1.2;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#about-divider {
+    width: 100%;
+    margin-top: 0px;
 }
 #about-2 {
     margin-top: 0px;
@@ -363,10 +412,9 @@ section {
 .about-container2 {
     display: flex;
     flex-direction: column;
-    border-top: 1px solid rgba(255, 255, 255, 0.205);
-    width: 75%;
+    width: 65%;
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 0px;
     align-items: center;
     justify-content: center;
     background: rgb(0,0,0);
@@ -385,7 +433,7 @@ section {
     display: flex;
     text-align: center;
     width: 40vw;
-    margin: 40px 20px 0px 20px;
+    margin: 10px 20px 25px 20px;
     letter-spacing: .7;
     font-weight: 500;
     line-height: 1.5;
@@ -393,7 +441,7 @@ section {
 }
 
 .bootcamp {
-    margin: 30px 20px 10px 20px;
+    margin: 40px 20px 10px 20px;
     padding: 0px 4px 4px 4px;
     filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.767));
     background-color: rgba(255, 255, 255, 0.123);
@@ -694,7 +742,7 @@ section {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgb(21, 20, 22) 11%, rgb(21, 20, 22) 89%, rgba(0,0,0,0) 100%);
 }
-.contact h2 {
+.contact h2, .col h2 {
     color: rgba(255, 255, 255, 0.815);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -702,42 +750,112 @@ section {
     font-weight: 500;
     letter-spacing: 7;
 }
-.contact-desc {
-    display: flex;
+.contact-desc h4, .col h4 {
+    color: rgba(255, 255, 255, 0.815);
+    margin: auto;
+    font-weight: 600;
+    letter-spacing: 5;
+    text-transform: none;
+    line-height: 1.7;
+    width: 90%;
     text-align: center;
-    width: 40vw;
-    margin: 0px 20px 20px 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.contact-desc {
+    text-align: center;
+    width: 35vw;
+    margin: 15px 20px 15px 20px auto;
     letter-spacing: .4;
     font-weight: 500;
     line-height: 1.5;
     font-size: 120%;
 }
-
-.social-button {
+.contact-info {
+    width: 550px;
+    align-items: center;
+    font-size: 115%;
+    line-height: 1.75;
+    padding: 10px;
+}
+.contact-picture {
     justify-content: center;
     align-items: center;
-    margin: 15px;
-    height: 55px;
-    line-height: 0;
-    padding: 0 12px 0 8px;
-    border-radius: 10px !important;
+    height: 170px;
+    width: auto;
+    border-radius: 100px;
+    opacity: 90%;
+    margin: 0 auto;
+    filter: drop-shadow(4px 6px 12px rgba(0, 0, 0, 0.699));
 }
-#g-hub-button {
-    width: 138px;
-
+.social-container {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
 }
-#linkedin-button {
-    width: 153px;
-}
-#insta-button {
-    width: 171px;
+.social-button {
+    display: flex;
+    width: 56px;
+    margin: 0px 15px 0px 15px auto;
+    height: 56px;
+    align-items: center;
+    justify-content: center;
+    line-height: 56px;
+    text-overflow: clip;
+    padding: 0px;
+    border: 2px solid white !important;
+    border-radius: 65px !important;
+    font-size: 80% !important;
 }
 .btn-icon {
-    margin-right: 7px;
-    width: 32px;
-    height: 32px;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+}
+.social-button::after {
+    pointer-events: none;
+    opacity: 0%;
+    position: absolute;
+    transform: translateY(100%);
+    transition: opacity 0.3s;
+}
+.social-button:hover::after {
+    display: block;
+    opacity: 100%;
+    cursor: default;
+    transition: opacity 0.7s 0.05s;
 }
 
+#facebook-button::after {
+    content: "Facebook";
+}
+#linkedin-button::after {
+    content: "LinkedIn";
+}
+#g-hub-button::after {
+    content: "Github";
+}
+#insta-button::after {
+    content: "Instagram";
+}
+#resume-button, #contact-form-button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto !important;
+    padding: 18px !important;
+    width: 120px;
+    line-height: 1;
+    font-size: 80% !important;
+    border-radius: 10px !important;
+}
+#resume-button span, #contact-form-button span {
+    color: white;
+}
 .contact-container h2 {
     font-weight: 500;
     text-align: center;
@@ -783,21 +901,34 @@ section {
     width: 100%;
     margin: 0;
 }
-.button-container {
+#button-container-1 {
     display: flex;
-    width: 500px;
-    justify-content: space-evenly;
+    width: 80%;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+#button-container-2 {
+    display: flex;
+    margin: 0px auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#button-container-2 button {
+    margin: 40px !important;
 }
 .divider {
-    margin-top: 17px;
+    margin-top: 15px;
     border-top: 1px solid rgba(0, 0, 0, 0.158);
     border-bottom: 1px solid rgba(255, 255, 255, 0.473);
 }
 .divider2 {
-    margin: 30px 0 10px 0;
+    margin: 30px 0 30px 0;
+    padding: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.836);
     border-bottom: 1px solid rgba(255, 255, 255, 0.205);
-    width: 45vw;
+    width: 35vw;
 }
 .checkbox-container {
     display: flex;
@@ -969,8 +1100,8 @@ label {
     -webkit-transition: width .8s cubic-bezier(.36,.26,0,1.02), filter 1s, border-color 0.5s, color 1s;
     -moz-transition: width .8s cubic-bezier(.36,.26,0,1.02), filter 1s, border-color 0.5s, color 1s;
     -o-transition: width .8s cubic-bezier(.36,.26,0,1.02), filter 1s, border-color 0.5s, color 1s;
-    transition: border-color 0.5s, 
-        box-shadow 0.5s,
+    transition: border 0.5s, 
+        box-shadow 0.3s,
         background-color 0.5s,
         color 0.5s;
 }
@@ -979,16 +1110,22 @@ label {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.212);
     border: 2px solid rgb(229, 255, 251);
-    box-shadow: 0 0 13px rgba(255, 255, 255, 0.315), inset 0px 0px 5px 2px rgba(255, 255, 255, 0.479);
+    box-shadow: 0 0 13px rgba(255, 255, 255, 0.151), inset 0px 0px 5px 2px rgba(255, 255, 255, 0.479);
     color: white;
-    transition: border-color 0.1s, 
+    transition: border 0.1s, 
         box-shadow 0.1s, 
         background-color 0.1s,
         color 0.1s;
 }
 .button:active {
     filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.745));
+    border: 2px solid rgb(229, 255, 251);
+    outline: none;
     transition: filter 0.2s;
+}
+.button:visited, .button:focus {
+    border: 2px solid rgba(255, 255, 255, 0.678);
+    outline: none;
 }
 .nav-bar {
     display: block;

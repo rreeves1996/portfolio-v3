@@ -1,14 +1,13 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Ryan Reeves - Portfolio</title>
 
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style/style.css"/>
     <style>
         html {
@@ -35,11 +34,11 @@
     </header>
     <div class="line"></div>
     <main>
-        <!-- MAIN NAV -->
-        <div class="nav-buttons">
-            <img id="about-home" src="./assets/about.png" class="topnavbutton">
-            <img id="portfolio-home" src="./assets/portfolio.png" class="topnavbutton">
-            <img id="contact-home" src="./assets/contact.png" class="topnavbutton">
+        <div class="explore-container">
+            <div class="explore-button-container" id="explore-button">
+                <i class="fa-solid fa-angle-down arrowDown" id="unhovered-half"></i>
+                <i class="fa-solid fa-angle-down arrowDown" id="hovered-half"></i>
+            </div>
         </div>
 
         <!-- ABOUT SECTION -->
@@ -48,19 +47,20 @@
                 <div class="line1"></div><h1>About <span class="me">Me</span></h1><div class="line2"></div>
             </div>
             <div class="about-container">
-                <img class="about-picture" id="picture-1" src="./assets/about1.png">
-                <p id="about-1">
-                    If asked, I would have to proclaim myself as a lifelong musician, learner, and oxford comma user. 
-                    Being born in 1996, I was fortunate
-                    enough to witness first-hand the monumental advancements we have made towards technology and
-                    computers the past 26 years - advancements that completely altered our everyday lives.</p> <p id="about-1">As
-                    I navigated through my adolescence, I became more and more intrigued about combining my passion 
-                    for the arts and creative expression with technology. I dove head-first in to the
-                    oddly green-ish, uncomfortably lukewarm waters of graphic design as got older, which completely
-                    broke my brain. Since then - for over a decade, now - my stubborn brain has picked apart 
-                    every website I've visited and every app I've used. My early and late teenage years would consist of me
-                    using my abundant amount of annoying, youthful energy to scour the nuances that made certain websites
-                    or apps just "feel" or look better as a whole.
+                <img class="about-picture" id="picture-1" src="./assets/other-images/about1.png">
+                <h3>If I was asked to describe myself, I would say my identity is that of a lifelong <strong>musician</strong>, 
+                    <strong>learner</strong>, and <strong>oxford comma user</strong>.</h3>
+                
+                <p id="about-1">Being born in 1996, I was fortunate
+                enough to witness first-hand the monumental advancements we have made towards technology and
+                computers the past 26 years - advancements that completely altered our everyday lives.</p> <p id="about-1">As
+                I navigated through my adolescence, I became more and more intrigued about combining my passion 
+                for the arts and creative expression with technology. I dove head-first in to the
+                oddly green-ish, uncomfortably lukewarm waters of graphic design as got older, which completely
+                broke my brain. Since then - for over a decade, now - my stubborn brain has picked apart 
+                every website I've visited and every app I've used. My early and late teenage years would consist of me
+                using my abundant amount of annoying, youthful energy to scour the nuances that made certain websites
+                or apps just "feel" or look better as a whole.
                 </p>
                 
                 <p id="about-2">
@@ -70,7 +70,7 @@
                     really intrigued me was the creative, often stupid ways I could get something to work, or the frustrating
                     issues I would have that would often reveal curious details about how the code worked.
                     Despite this, I would find myself in the trades for the majority of my career past high school - first 
-                    as an automotive technician, <img class="about-picture" id="picture-2" src="./assets/about2.png">
+                    as an automotive technician, <img class="about-picture" id="picture-2" src="./assets/other-images/about2.png">
                     then  in brick and stone masonry, where I reside today.
                     
                 </p><p id="about-2">Recently, after a lot of
@@ -81,8 +81,11 @@
                     how grateful I am to be fortunate enough to have the option to switch in to a new career 
                     where I know I will excel!
                 </p>
+                
             </div>
+            
             <div class="about-container2">
+                <div class="divider2" id="about-divider"></div>
                 <h2>What is my current focus?</h2>
                 <p class="current-focus">Currently, I am looking for ways to further my education/skills in front-end development and design!
                     I have thoroughly enjoyed any front-end oriented work I've done so far, and it excites me to know that I am only in the
@@ -136,12 +139,12 @@
                     <h3>First project:</h3>
                     <h3 class="title">Fork the Food</h3>
                     <a class="g-project-sub-container" href="https://eyesackel.github.io/fork-the-food/">
-                        <img class="g-project" id="g-project1" src="./assets/proj-pictures/ftf.png">
+                        <img class="g-project" id="g-project1" src="./assets/proj-images/ftf.png">
                         <p class="g-project-desc">Application that generates recipes based on inputted ingredients using a third-party ingredient API along with YouTube's API</p>
                     </a>
                     <div class="repo-link-container">
                         <a class="repo-link" href="https://github.com/EyesackEl/fork-the-food">
-                            <img class="github-logo" src="./assets/GitHub_Logo_White.png">
+                            <img class="github-logo" src="./assets/other-images/GitHub_Logo_White.png">
                             <p>(repository link)</p>
                         </a>
                     </div>
@@ -150,12 +153,12 @@
                     <h3>Second project:</h3>
                     <h3 class="title">Stack My Paddle</h3>
                     <a class="g-project-sub-container" href="https://stack-my-paddle.herokuapp.com/">
-                        <img class="g-project" id="g-project2" src="./assets/proj-pictures/smp.png">
+                        <img class="g-project" id="g-project2" src="./assets/proj-images/smp.png">
                         <p class="g-project-desc">Application/website with integrated Handlebars functionality that locates nearby pickleball courts using a third-party API</p>
                     </a>
                     <div class="repo-link-container">
                         <a class="repo-link" href="https://github.com/furhan-dev/pickleball">
-                            <img class="github-logo" src="./assets/GitHub_Logo_White.png">
+                            <img class="github-logo" src="./assets/other-images/GitHub_Logo_White.png">
                             <p>(repository link)</p>
                         </a>
                     </div>
@@ -166,7 +169,7 @@
                 <div class="carousel" data-flickity='{ "contain": true, "wrapAround": true }'>
                     <div class="carousel-cell">
                         <a class="project-link" href="https://github.com/rreeves1996/week9-hw">        
-                            <img class="project" id="project1" src="./assets/proj-pictures/readmegen.png">
+                            <img class="project" id="project1" src="./assets/proj-images/readmegen.png">
                             <div class="label-container">
                                 <p class="project-label">README Generator</p>
                                 <p class="project-desc">Command line, Inquirer</p>
@@ -175,7 +178,7 @@
                     </div>
                     <div class="carousel-cell">
                         <a class="project-link" href="https://github.com/rreeves1996/week13-hw"> 
-                            <img class="project" id="project2" src="./assets/proj-pictures/ecommerce.png">
+                            <img class="project" id="project2" src="./assets/proj-images/ecommerce.png">
                             <div class="label-container">
                                 <p class="project-label">E-Commerce Back-End</p>
                                 <p class="project-desc">Node, Sequelize/MySQL, ORM</p>
@@ -184,7 +187,7 @@
                     </div>
                     <div class="carousel-cell">
                         <a class="project-link" href="https://github.com/rreeves1996/week10-hw"> 
-                            <img class="project" id="project3" src="./assets/proj-pictures/teamgen.png">
+                            <img class="project" id="project3" src="./assets/proj-images/teamgen.png">
                             <div class="label-container">
                                 <p class="project-label">Team Profile Generator</p>
                                 <p class="project-desc">Node, Command line, Inquirer</p>
@@ -193,7 +196,7 @@
                     </div>
                     <div class="carousel-cell">
                         <a class="project-link" href="https://github.com/rreeves1996/week12-hw"> 
-                            <img class="project" id="project4" src="./assets/proj-pictures/emptracker.png">
+                            <img class="project" id="project4" src="./assets/proj-images/emptracker.png">
                             <div class="label-container">
                                 <p class="project-label">HR Employee Tracker</p>
                                 <p class="project-desc">Node, Sequelize/MySQL, Inquirer</p>
@@ -202,7 +205,7 @@
                     </div>
                     <div class="carousel-cell">
                         <a class="project-link" href="https://github.com/rreeves1996/week6-hw"> 
-                            <img class="project" id="project5" href="#" src="./assets/proj-pictures/weather.png">
+                            <img class="project" id="project5" href="#" src="./assets/proj-images/weather.png">
                             <div class="label-container">
                                 <p class="project-label">Weather Dashboard</p>
                                 <p class="project-desc">Third-Party APIs, JavaScript</p>
@@ -218,65 +221,100 @@
             <div class="title-container">
                 <div class="line1"></div><h1>Contact</h1><div class="line2"></div>
             </div>
+            
             <div class="contact-desc">
-                Being as early in my learning as I am, I am ready to dive into 
-                almost any opportunity that would help me improve as a designer, front-end/web developer, and software
-                engineer. I am confident in my learning abilities, and I am grateful for any advice or mentorship that comes my way. 
-                If you think I could be a good fit for your team, a learning position you have available, or even a temporary 
-                position for a specific project, please do not hesitate to contact me!
+                <h4>I am eagerly searching for opportunities that will help me further develop my skillsets as a front-end developer and software
+                engineer.</h4>
             </div>
-            <div class="divider2"></div>
-            <h2>Socials:</h2>
-            <div class="contact-desc">
-                Unfortunately, I do not have a massive social media presence. I haven't had a Facebook in over a decade, and I've never
-                been a huge on Twitter. Here is everything I have to offer (please forgive me):
-            </div>
-            <div class="button-container">
-                <a href="https://www.linkedin.com/in/ryan-reeves-908b69248/"><button type="button" class="social-button button" id="linkedin-button"><img src="./assets/—Pngtree—linkedin white icon_3570423.png"  id="linkedin-icon" alt="linkedin-mark" class="btn-icon">LinkedIn</button></a>
-
-                <a href="https://github.com/rreeves1996"><button type="button" class="social-button button" id="g-hub-button"><img src="./assets/GitHub-Mark-Light-32px.png" id="g-hub-icon" alt="github-mark" class="btn-icon">GitHub</button></a>
-                <a href="https://www.instagram.com/ryanmakesloudnoises/"><button type="button" class="social-button button" id="insta-button"><img src="./assets/—Pngtree—instagram white icon free logo_3570433.png" id="instagram-icon" alt="instagram-mark" class="btn-icon">Instagram</button></a>
+            <div class="divider2" id="contact-divider"></div>
+            <h2>Contact Info:</h2>
+            <div class="contact-info row m-auto align-content-center">
+                <div class="col">
+                    <strong>Name</strong>: Ryan Reeves<br>
+                    <strong>Phone</strong>: (425) 418-3963<br>
+                    <strong>Email</strong>: rreeves.dev@gmail.com<br>
+                    <strong>Location</strong>: Bothell, WA
+                    <strong>Timezone</strong>: PDT (GMT - 07:00)
+                </div>
+                <div class="col-auto">
+                    <img class="contact-picture" id="contact-picture" src="./assets/other-images/about1.png">
+                </div>
+                <div class="button-container" id="button-container-1">
+                    <a href="https://www.facebook.com/profile.php?id=100084404122284"><button type="button" class="social-button button" id="facebook-button">
+                        <img src="./assets/other-images/—Pngtree—facebook white icon free logo_3570433.png"  id="facebook-icon" alt="facebook-mark" class="btn-icon">
+                        </button></a>
+                    <a href="https://www.linkedin.com/in/ryan-reeves-908b69248/"><button type="button" class="social-button button" id="linkedin-button">
+                        <img src="./assets/other-images/—Pngtree—linkedin white icon_3570423.png"  id="linkedin-icon" alt="linkedin-mark" class="btn-icon">
+                        </button></a>
+                    <a href="https://github.com/rreeves1996"><button type="button" class="social-button button" id="g-hub-button">
+                        <img src="./assets/other-images/GitHub-Mark-Light-32px.png" id="g-hub-icon" alt="github-mark" class="btn-icon">
+                        </button></a>
+                    <a href="https://www.instagram.com/ryanmakesloudnoises/"><button type="button" class="social-button button" id="insta-button">
+                        <img src="./assets/other-images/—Pngtree—instagram white icon free logo_3570433.png" id="instagram-icon" alt="instagram-mark" class="btn-icon">
+                        </button></a>
+                        
+                </div>
+                <div class="button-container" id="button-container-2">
+                    <a href="./assets/Ryan_Reeves_-_Entry_Level_Front-End_Developer (2).pdf"><button type="button" class="social-button button" id="resume-button"><span>Resume</span></button></a>
+                    <button type="button" class="button" id="contact-form-button" data-toggle="modal" data-target="#exampleModal"><span>
+                        Contact
+                    </span>
+                    </button>
+                </div>
             </div>
             
-            <div class="contact-container">
-                <h2>Don't be shy!</h2>
-                <form>
-                    <div class="name-email">
-                        <div class="contact-sub-container">
-                            <label id="name-label" for="name">Name:</label>
-                            <input type="text" id="name" class="contact-name" autocomplete="off" spellcheck="off">
-                        </div>
-                        <div class="contact-sub-container">
-                            <label id="email-label" for="email">Email:</label>
-                            <input type="text" id="email" class="contact-email" autocomplete="off" spellcheck="off">
-                        </div>
-                    </div>
-                    <div class="name-email">
-                        <div class="contact-sub-container">
-                            <label id="subject-label" for="subject">Subject:</label>
-                            <input type="text" id="subject" class="contact-subject" autocomplete="off" spellcheck="off">
-                        </div>
-                        <div class="contact-sub-container" id="business-personal">
-                            <label id="business-personal-label" for="business-personal">Inquiry type:</label>
-                            <div class="checkbox-container">
-                                <label class="checkbox-container2" for="business" id="business-label">
-                                <input type="checkbox" id="business" class="business-personal" value="business" checked="checked">
-                                <span class="checkmark"></span>Business</label>
-                                <label class="checkbox-container2" for="personal" id="personal-label">
-                                <input type="checkbox" id="personal" class="business-personal" value="personal" checked="checked">
-                                <span class="checkmark"></span>Personal</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="divider"></div>
-                    <label for="message" id="message-label" class="message">Message:</label>
-                    <textarea id="message-box" class="message-box" autocomplete="off" spellcheck="off"></textarea>
-                    <button type="submit" class="button submit">Submit</button>
-                    
-                </form>
-            </div>
+            
+
+
+        
         </section>
 
+          
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+        <div class="contact-container">
+            <h2>Don't be shy!</h2>
+            <form>
+                <div class="name-email">
+                    <div class="contact-sub-container">
+                        <label id="name-label" for="name">Name:</label>
+                        <input type="text" id="name" class="contact-name" autocomplete="off" spellcheck="off">
+                    </div>
+                    <div class="contact-sub-container">
+                        <label id="email-label" for="email">Email:</label>
+                        <input type="text" id="email" class="contact-email" autocomplete="off" spellcheck="off">
+                    </div>
+                </div>
+                <div class="name-email">
+                    <div class="contact-sub-container">
+                        <label id="subject-label" for="subject">Subject:</label>
+                        <input type="text" id="subject" class="contact-subject" autocomplete="off" spellcheck="off">
+                    </div>
+                    <div class="contact-sub-container" id="business-personal">
+                        <label id="business-personal-label" for="business-personal">Inquiry type:</label>
+                        <div class="checkbox-container">
+                            <label class="checkbox-container2" for="business" id="business-label">
+                            <input type="checkbox" id="business" class="business-personal" value="business" checked="checked">
+                            <span class="checkmark"></span>Business</label>
+                            <label class="checkbox-container2" for="personal" id="personal-label">
+                            <input type="checkbox" id="personal" class="business-personal" value="personal" checked="checked">
+                            <span class="checkmark"></span>Personal</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <label for="message" id="message-label" class="message">Message:</label>
+                <textarea id="message-box" class="message-box" autocomplete="off" spellcheck="off"></textarea>
+                <button type="submit" class="button submit">Submit</button>
+                
+            </form>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
         <!-- NAV BAR -->
         <div class="nav-bar hide" id="nav-bar">
             <h3 id="about-nav">ABOUT</h3>
@@ -284,12 +322,13 @@
             <h3 id="contact-nav">CONTACT</h3>
         </div>
     </main>
-    <footer><h6><code>Made with ❤️ by your friendly neighborhood stone mason</code></h5></footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <footer><h6><code>Made with ❤️ by your friendly neighborhood stone mason</code></h6></footer>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script type="text/javascript" src="./assets/script/script.js"></script>
+        <script type="text/javascript" src="./assets/script/script.js"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
