@@ -856,6 +856,15 @@ section {
 #resume-button span, #contact-form-button span {
     color: white;
 }
+.modal-content {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    position: absolute;
+    top: 5vw !important;
+    filter: drop-shadow(0px 0px 50px 100px black);
+
+}
 .contact-container h2 {
     font-weight: 500;
     text-align: center;
@@ -883,10 +892,7 @@ section {
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.836);
     border-top: 1px solid rgba(255, 255, 255, 0.747);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 40px;
     box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.637);
 
 }
@@ -1003,6 +1009,9 @@ section {
     margin: 9px 12px 3px 12px;
     
 }
+#name:focus, #email:focus, #subject:focus, #message-box:focus {
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.562)) ;
+}
 #name, #email, #subject {
     margin: 3px 12px 3px 12px;
     height: 28px;
@@ -1065,7 +1074,6 @@ input, textarea {
 }
 input:focus, textarea:focus {
     outline: none;
-
 }
 label {
     margin: 20px 5px 0px 12px;
